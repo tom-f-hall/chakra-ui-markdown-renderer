@@ -35,7 +35,7 @@ export const defaults = {
     const { language, value } = props;
     const className = language && `language-${language}`;
     return (
-      <pre className=`language-${language}`>
+      <pre className={classname}>
         <code>
           {value}
         </code>
