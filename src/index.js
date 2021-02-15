@@ -35,10 +35,10 @@ export const defaults = {
     const { language, value } = props;
     const className = language && `language-${language}`;
     return (
-      <pre {...getCoreProps(props)}>
-        <Code p={2} className={className || null}>
+      <pre className=`language-${language}`>
+        <code>
           {value}
-        </Code>
+        </code>
       </pre>
     );
   },
